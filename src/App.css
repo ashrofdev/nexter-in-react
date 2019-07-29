@@ -7,6 +7,7 @@
   padding: 1rem;
   background-color: rgb(3, 3, 37);
   grid-column: 2/-1;
+  height: 90vh;
 }
 .side-bar {
   padding: 1rem;
@@ -16,8 +17,23 @@
 }
 .features {
   padding: 1rem;
-  background-color: rgb(13, 88, 6);
   grid-column: 3/9;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 18rem));
+  justify-content: center;
+  grid-gap: 2rem;
+}
+.feature h2 {
+  color: rgb(85, 84, 84);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.feature p {
+  color: rgb(85, 84, 84);
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
 }
 .story {
   padding: 1rem;
