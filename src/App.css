@@ -11,7 +11,7 @@
 }
 .side-bar {
   padding: 1rem;
-  background-color: rgb(235, 145, 10);
+  background-color: rgb(216, 162, 81);
   grid-column: 1/2;
   grid-row: 1/ 9;
 }
@@ -40,21 +40,40 @@
   display: flex;
 }
 .story .left {
-  width: 50%;
+  width: 60%;
   background-image: url(./img/back.jpg);
   background-size: cover;
   background-position: center;
 }
 .story .right {
-  width: 50%;
+  width: 40%;
   background-color: rgb(248, 246, 239);
   padding: 5rem;
 }
 .story .right h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(59, 59, 59);
+}
+.story .right p {
+  font-size: 1rem;
+  color: rgb(216, 162, 81);
+  margin-bottom: -1rem;
+}
+.story .right .story {
+  font-size: 1rem;
+  color: rgb(41, 40, 39);
+  font-style: italic;
+  margin-bottom: 3rem;
+  line-height: 1.5rem;
+}
+.story .right button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: #fff;
+  border: none;
+  background-color: rgb(216, 162, 81);
 }
 .cards {
   padding: 1rem;
