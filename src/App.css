@@ -77,8 +77,42 @@
 }
 .cards {
   padding: 1rem;
-  background-color: rgb(116, 9, 107);
   grid-column: 3/9;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 18rem));
+  justify-content: center;
+  grid-gap: 2rem;
+}
+.card {
+  color: rgb(78, 77, 77);
+  text-align: center;
+  background-color: rgb(235, 230, 230);
+}
+.cards img {
+  width: 100%;
+}
+.cards h3 {
+  font-size: 1rem;
+  background-color: rgb(5, 2, 46);
+  color: #fff;
+  padding: 1rem;
+  margin: 0 1rem;
+  margin-top: -2rem;
+  z-index: 100;
+  position: relative;
+}
+.cards .details {
+  padding: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2,1fr);
+}
+.cards button {
+  font-size: 1rem;
+  background-color: rgb(216, 162, 81);
+  padding: 1rem 2rem;
+  color: #fff;
+  width: 100%;
 }
 .gallery {
   padding: 1rem;
