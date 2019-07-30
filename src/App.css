@@ -4,19 +4,35 @@
   grid-template-columns: minmax(3rem, 5rem) minmax(2rem, 1fr) repeat(6, minmax(6rem, 10rem)) minmax(2rem, 1fr);
 }
 .head {
-  padding: 1rem;
-  background-color: rgb(3, 3, 37);
+  background-image: linear-gradient(to right, rgba(2, 5, 32, 0.774) 70%, rgb(1, 2, 39)70%), url(./components/img/hero.jpeg);
   grid-column: 2/-1;
+  background-position: left;
+  background-size: contain;
+  background-attachment: fixed;
   height: 90vh;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(6rem, 10rem)) minmax(2rem, 1fr);
+}
+.head .main {
+  grid-column: 2 / 7;
+  grid-row: 1/2;
+  width: 80%;
+}
+.head .realtor {
+  grid-column: 7 / 8;
+  grid-row: 1/2;
+  width: 20%;
 }
 .side-bar {
   padding: 1rem;
   background-color: rgb(216, 162, 81);
   grid-column: 1/2;
   grid-row: 1/ 9;
+  position: fixed;
+  width: 3rem;
+  height: 100vh;
 }
 .features {
-  padding: 1rem;
   grid-column: 3/9;
   padding: 5rem 0;
   display: grid;
@@ -41,7 +57,7 @@
 }
 .story .left {
   width: 60%;
-  background-image: url(./img/back.jpg);
+  background-image: url(./components/img/back.jpg);
   background-size: cover;
   background-position: center;
 }
