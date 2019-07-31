@@ -17,6 +17,31 @@
   background-repeat: no-repeat;
   background-position: center;
   grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+.head .main .logo {
+  width: 10rem;
+  align-self: center;
+  margin-bottom: 5rem;
+}
+.head .main .heading p {
+  margin-bottom: -1rem;
+  font-size: 1.1rem;
+  color: rgb(216, 162, 81);
+  font-weight: 500;
+}
+.head .main .heading h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+.head .main button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: #fff;
+  border: none;
+  background-color: rgb(216, 162, 81);
 }
 .head .realtor {
   grid-column: 7 / -1;
