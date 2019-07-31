@@ -4,24 +4,24 @@
   grid-template-columns: minmax(3rem, 5rem) minmax(2rem, 1fr) repeat(6, minmax(6rem, 10rem)) minmax(2rem, 1fr);
 }
 .head {
-  background-image: linear-gradient(to right, rgba(2, 5, 32, 0.774) 70%, rgb(1, 2, 39)70%), url(./components/img/hero.jpeg);
   grid-column: 2/-1;
-  background-position: left;
-  background-size: contain;
-  background-attachment: fixed;
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(6rem, 10rem)) minmax(2rem, 1fr);
 }
 .head .main {
-  grid-column: 2 / 7;
+  background-image: linear-gradient(to right, rgba(2, 5, 32, 0.774), rgba(1, 2, 39, 0.562)), url(./components/img/hero.jpeg);
+  grid-column: 1 / 7;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   grid-row: 1/2;
-  width: 80%;
 }
 .head .realtor {
-  grid-column: 7 / 8;
+  grid-column: 7 / -1;
   grid-row: 1/2;
-  width: 20%;
+  background-color: rgb(1, 2, 39);
 }
 .side-bar {
   padding: 1rem;
