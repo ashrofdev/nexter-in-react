@@ -4,7 +4,6 @@ const Head = () => {
   return (
     <div className="head">
       <div className="main">
-        main header section
         <img className="logo" alt="" src={require('./img/logo.png')} />
         <div className="heading">
           <p>YOUR OWN HOME</p>
@@ -13,7 +12,28 @@ const Head = () => {
         </div>
       </div>
       <div className="realtor">
-        realtor section
+        <h2>TOP 3 REALTORS</h2>
+        <div className="real">
+        <img alt="" src={require('./img/realtor-1.jpeg')}/>
+          <div className="data">
+            <p>Eric Feinman</p>
+            <span>256 HOUSES SOLDS</span>
+          </div>
+        </div>
+        <div className="real">
+        <img alt="" src={require('./img/realtor-2.jpeg')}/>
+          <div className="data">
+            <p>Kim Brown</p>
+            <span>212 HOUSES SOLDS</span>
+          </div>
+        </div>
+        <div className="real">
+        <img alt="" src={require('./img/realtor-3.jpeg')}/>
+          <div className="data">
+            <p>Toby Ramsey</p>
+            <span>198 HOUSES SOLDS</span>
+          </div>
+        </div>
       </div>
     </div>
   );
