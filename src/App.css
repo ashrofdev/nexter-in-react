@@ -120,6 +120,26 @@
   background-image: url(./components/img/back.jpg);
   background-size: cover;
   background-position: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+.story .left .back {
+  grid-column: 2/5;
+  grid-row: 1/2;
+}
+.story .left .back img {
+  width: 100%;
+  height: 100%;
+}
+.story .left .hp {
+  grid-column: 4/6;
+  grid-row: 1/2;
+}
+.story .left .hp img {
+  width: 130%;
+  height: 100%;
+  transform: translate(-10%, 50%);
 }
 .story .right {
   width: 40%;
@@ -152,7 +172,7 @@
   background-color: rgb(216, 162, 81);
 }
 .cards {
-  padding: 1rem;
+  padding: 5rem 0;
   grid-column: 3/9;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 18rem));
@@ -195,8 +215,25 @@
   grid-column: 2/-1;
 }
 .footer {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(17, 25, 39);
   grid-column: 2/-1;
+  text-align: center;
+  padding: 2rem 0;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.footer li {
+  padding: 1rem 2rem;
+  list-style: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+.footer li:hover {
+  background-color: rgba(255, 255, 255, 0.315);
 }
 button {
   cursor: pointer;

@@ -5,6 +5,12 @@ const Story = () => {
     <div className="story">
       <div className="left">
         {'gallery'}
+        <div className="back">
+          <img alt="" src={require('./img/story-1.jpeg')}/>
+        </div>
+        <div className="hp">
+          <img alt="" src={require('./img/story-2.jpeg')}/>
+        </div>
       </div>
       <div className="right">
         <p>HAPPY CUSTOMERS</p>

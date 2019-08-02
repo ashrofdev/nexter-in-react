@@ -7,7 +7,7 @@ const Head = () => {
         <img className="logo" alt="" src={require('./img/logo.png')} />
         <div className="heading">
           <p>YOUR OWN HOME</p>
-          <h1>The ultimate personal freeedom</h1>
+          <h1>The ultimate personal freedom</h1>
           <button>FIND YOUR OWN HOME</button>
         </div>
       </div>
