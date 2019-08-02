@@ -4,7 +4,6 @@ const Story = () => {
   return (
     <div className="story">
       <div className="left">
-        {'gallery'}
         <div className="back">
           <img alt="" src={require('./img/story-1.jpeg')}/>
         </div>
