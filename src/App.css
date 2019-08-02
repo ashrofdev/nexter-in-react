@@ -212,6 +212,20 @@
 }
 .gallery {
   grid-column: 2/-1;
+  background-color: rgb(247, 244, 244);
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 1rem;
+  grid-template-rows: repeat(7, 4rem);
+}
+.g1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
 }
 .footer {
   background-color: rgb(17, 25, 39);
