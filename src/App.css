@@ -211,7 +211,6 @@
   width: 100%;
 }
 .gallery {
-  background-color: rgb(238, 215, 12);
   grid-column: 2/-1;
 }
 .footer {
