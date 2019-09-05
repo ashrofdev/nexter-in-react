@@ -13,26 +13,28 @@ const Head = () => {
       </div>
       <div className="realtor">
         <h2>TOP 3 REALTORS</h2>
+        <div className="persons">
         <div className="real">
-        <img alt="" src={require('./img/realtor-1.jpeg')}/>
+          <img alt="" src={require('./img/realtor-1.jpeg')}/>
           <div className="data">
             <p>Eric Feinman</p>
             <span>256 HOUSES SOLDS</span>
           </div>
         </div>
         <div className="real">
-        <img alt="" src={require('./img/realtor-2.jpeg')}/>
+          <img alt="" src={require('./img/realtor-2.jpeg')}/>
           <div className="data">
             <p>Kim Brown</p>
             <span>212 HOUSES SOLDS</span>
           </div>
         </div>
         <div className="real">
-        <img alt="" src={require('./img/realtor-3.jpeg')}/>
+          <img alt="" src={require('./img/realtor-3.jpeg')}/>
           <div className="data">
             <p>Toby Ramsey</p>
             <span>198 HOUSES SOLDS</span>
           </div>
+        </div>
         </div>
       </div>
     </div>

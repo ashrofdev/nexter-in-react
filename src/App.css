@@ -1,7 +1,7 @@
 .App {
   color: #fff;
   display: grid;
-  grid-template-columns: minmax(3rem, 5rem) minmax(2rem, 1fr) repeat(6, minmax(6rem, 10rem)) minmax(2rem, 1fr);
+  grid-template-columns: minmax(3rem, 4rem) minmax(2rem, 1fr) repeat(6, minmax(6rem, 10rem)) minmax(2rem, 1fr);
 }
 
 .head {
@@ -89,7 +89,6 @@
   grid-column: 1/2;
   grid-row: 1/ 9;
   position: fixed;
-  width: 3rem;
   height: 100vh;
 }
 .features {
@@ -289,6 +288,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 3rem;
 }
 .footer li {
@@ -302,4 +302,72 @@
 }
 button {
   cursor: pointer;
+}
+
+
+
+/* writing media queries */
+
+@media only screen and (max-width: 950px) {
+  .App {
+    grid-template-columns: 1fr minmax(2rem, 1fr) repeat(6, minmax(6rem, 10rem)) minmax(2rem, 1fr);
+  }
+  .side-bar {
+    position: fixed;
+    width: 100%;
+    height: 1rem;
+  }
+  .head {
+    margin-top: 1.5rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* .head {
+    display: block;
+  }
+  .head .main {
+    padding-bottom: 2rem;
+  }
+  .head .realtor .persons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .story {
+    flex-direction: column;
+  }
+  .story .left {
+    width: 100%;
+    padding: 3rem 0;
+  }
+  .story .left .hp img {
+    width: 100%;
+  }
+  .story .right {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .story .right h1 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+  } */
+}
+@media only screen and (max-width: 450px) {
+  .head .realtor .persons {
+    flex-direction: column;
+  }
+  .App {
+    display: block;
+  }
+  .side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .features {
+    margin-top: 23rem;
+  }
 }
