@@ -355,6 +355,9 @@ button {
     font-weight: 600;
     color: rgb(59, 59, 59);
   }
+  .gallery {
+    grid-template-rows: repeat(7, 3rem);
+  }
 }
 @media only screen and (max-width: 450px) {
   .head .realtor .persons {
@@ -370,5 +373,18 @@ button {
   }
   .features {
     margin-top: 23rem;
+  }
+  .cards {
+    display: block;
+    padding: 2rem;
+  }
+  .cards .card {
+    margin-bottom: 2rem;
+  }
+  .footer li {
+    padding: 1rem;
+  }
+  .gallery {
+    display: block;
   }
 }
