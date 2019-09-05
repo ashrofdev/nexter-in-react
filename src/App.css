@@ -322,7 +322,7 @@ button {
   }
 }
 @media only screen and (max-width: 850px) {
-  /* .head {
+  .head {
     display: block;
   }
   .head .main {
@@ -353,7 +353,7 @@ button {
     font-style: italic;
     font-weight: 600;
     color: rgb(59, 59, 59);
-  } */
+  }
 }
 @media only screen and (max-width: 450px) {
   .head .realtor .persons {
